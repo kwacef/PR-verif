@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				script {
 				currentBuild.displayName = BUILD_NUMBER + "/" + GIT_BRANCH  
-					error()
+				
 				}      
 			}    
 		}
