@@ -4,8 +4,9 @@ pipeline {
 		stage ("hello") {
 			steps {
 				script {
-				currentBuild.displayName = BUILD_NUMBER + "/" + GIT_BRANCH  
-				
+				currentBuild.displayName = BUILD_NUMBER + "//" + GIT_BRANCH    
+					error()
+					
 				}      
 			}    
 		}
