@@ -1,7 +1,7 @@
 pipeline {
   agent any
 	stages {
-		stage ("hello") {
+		stage ("verif build") {
 			steps {
 				script {
 				currentBuild.displayName = BUILD_NUMBER + "//" + GIT_BRANCH    
