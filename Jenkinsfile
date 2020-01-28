@@ -8,6 +8,7 @@ pipeline {
 				currentBuild.displayName = BUILD_NUMBER + "//" + GIT_BRANCH    
         sleep(10)
 					error()
+          
 					
 				}      
 			}    
@@ -18,7 +19,7 @@ pipeline {
 	
 	post {
 		failure {
-      
+
 			// Send email on failure
 
 			script {
